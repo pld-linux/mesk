@@ -9,19 +9,24 @@ Source0:	http://mesk.nicfit.net/releases/%{name}-%{version}.tgz
 # Source0-md5:	089a99436fd85239a9ce58e6f22205f8
 URL:		http://mesk.nicfit.net/
 BuildRequires:	eject
+BuildRequires:	dbus-glib-devel
 BuildRequires:	gstreamer-audiosink-alsa
 BuildRequires:	gstreamer-cdio
 BuildRequires:	gstreamer-devel
 BuildRequires:	gstreamer-gnomevfs
 BuildRequires:	gstreamer-mad
 BuildRequires:	gstreamer-vorbis
-BuildRequires:	librsvg
+BuildRequires:	hal-devel
+BuildRequires:	intltool
+BuildRequires:	librsvg-devel
+BuildRequires:	pkgconfig
 BuildRequires:	python-CDDB
 BuildRequires:	python-dbus
 BuildRequires:	python-eyeD3
 BuildRequires:	python-gstreamer-devel
-BuildRequires:	python-pygtk-gtk
+BuildRequires:	python-pygtk-devel
 BuildRequires:	python-pyvorbis
+BuildRequires:	rpm-pythonprov
 Requires:	/usr/bin/eject
 Requires:	python-CDDB
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
